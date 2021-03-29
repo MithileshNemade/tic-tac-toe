@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFF0F0"
+    android:screenOrientation="portrait"
+    android:layout_gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="100">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"/>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="Tic-Tac-Toe"
+            android:fontFamily="@font/raleway"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:text="Play with FUN"
+            android:fontFamily="@font/playlist"
+            android:textColor="#AC3939"
+            android:textSize="50sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/mainBu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="playGame"
+                android:text="Play 1 vs 1"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/mainBu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="playGame"
+                android:text="Play alone"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
